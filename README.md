@@ -5,6 +5,8 @@ This is my (Sean McCullough) implementation of the Montu Geo Search back-end tec
 For my implementation, I have refactored the codebase to behave as a class-instance based library where a search engine instance has methods to perform the fuzzy search.
 This makes the code more portable and easier to add additional implementations from various providers in future by using standard interfaces.
 
+I have also changed the return type to an object containing an array. This could allow future expansion to include pagination information etc.
+
 ## Install:
 
 **Using npm:**
@@ -53,9 +55,9 @@ To contribute to this library, please use:
 
 ## Test:
 
-1. yarn install
-1. yarn lint
-1. yarn test
+1. `yarn install`
+1. `yarn lint`
+1. `yarn test`
 
 ## Requirements:
 
