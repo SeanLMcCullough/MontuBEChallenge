@@ -7,6 +7,14 @@ This makes the code more portable and easier to add additional implementations f
 
 I have also changed the return type to an object containing an array. This could allow future expansion to include pagination information etc.
 
+**Things that could be improved:**
+
+- Mock the API for unit tests, separate out integration tests to ensure reliability and repeatability of tests
+- Replace snapshot tests with targeted tests (if API is mocked, sorry if these tests break between now and Monday...)
+- The search input should be validated and sanitised. For this implementation we assume that axios suitably sanitises and encodes the URL
+- Replace axios with a fetch equivalent
+- Evaluate necessity of babel in a Node.JS library 
+
 ## Install:
 
 **Using npm:**
@@ -53,11 +61,13 @@ To contribute to this library, please use:
 - ts-standard (installed as a devdependency)
 - Prettier (format on save will conflict with ts-standard but didn't have the time to fix this)
 
-## Test:
+### Scripts:
 
-1. `yarn install`
-1. `yarn lint`
-1. `yarn test`
+1. `yarn install` - install dependencies and devdependencies
+1. `yarn lint` - runs ts-standard over the codebase to ensure adherance to coding standards
+1. `yarn lint:fix` - runs ts-standard in "fix" over the codebase to ensure adherance to coding standards
+1. `yarn test` - runs jest to ensure all unit tests are passing
+1. `yarn test:update` - runs jest and updates snapshots
 
 ## Requirements:
 
