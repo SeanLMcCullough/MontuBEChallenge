@@ -8,6 +8,9 @@
     "esModuleInterop": true
   },
   "include": [
+    "test/**/*.ts"
+  ],
+  "files": [
     "src/**/*.ts"
   ]
 }

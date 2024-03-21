@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPlaceAutocomplete can fetch a location with a street address from the autocomplete api 1`] = `
+Object {
+  "country": "Australia",
+  "countryCode": "AU",
+  "countryCodeISO3": "AUS",
+  "countrySecondarySubdivision": "Lower North Coast",
+  "countrySubdivision": "New South Wales",
+  "countrySubdivisionCode": "NSW",
+  "countrySubdivisionName": "New South Wales",
+  "countryTertiarySubdivision": null,
+  "extendedPostalCode": null,
+  "freeformAddress": "351 Pacific Highway, Coffs Harbour, New South Wales, 2450",
+  "localName": "Coffs Harbour",
+  "municipality": "Coffs Harbour",
+  "municipalitySecondarySubdivision": null,
+  "municipalitySubdivision": null,
+  "neighbourhood": null,
+  "postalCode": "2450",
+  "streetName": "Pacific Highway",
+  "streetNumber": "351",
+}
+`;
+
+exports[`getPlaceAutocomplete can fetch a location without a street address from the autocomplete api 1`] = `
+Object {
+  "country": "Australia",
+  "countryCode": "AU",
+  "countryCodeISO3": "AUS",
+  "countrySecondarySubdivision": "Adelaide",
+  "countrySubdivision": "South Australia",
+  "countrySubdivisionCode": "SA",
+  "countrySubdivisionName": "South Australia",
+  "countryTertiarySubdivision": null,
+  "extendedPostalCode": null,
+  "freeformAddress": "North Terrace, Adelaide Central Business District, South Australia, 5000 (Rundle Mall)",
+  "localName": "Adelaide Central Business District",
+  "municipality": "Adelaide",
+  "municipalitySecondarySubdivision": null,
+  "municipalitySubdivision": "Adelaide Central Business District",
+  "neighbourhood": "Rundle Mall",
+  "postalCode": "5000",
+  "streetName": "North Terrace",
+  "streetNumber": null,
+}
+`;
