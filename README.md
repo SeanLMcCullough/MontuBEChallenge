@@ -75,7 +75,7 @@ To contribute to this library, please use:
 
 ## Requirements:
 
-1. [ ] All tests should pass and ensure good coverage for new work
+1. [x] All tests should pass and ensure good coverage for new work
 2. We only allow Australian addresses to be returned
    - [x] Refactor to create a search engine instance with global params such as country
    - [x] Include options interface to reflect TomTom API params
@@ -86,5 +86,5 @@ To contribute to this library, please use:
    - [x] README entries for methods and usage
 4. The result elements should contain important information about the place (country, municipality, etc)
    - [x] Create response object return interface/type
-5. [ ] The returned result should be typed and easily consumable via users of the library
+5. [x] The returned result should be typed and easily consumable via users of the library
 6. No front-end requirements are necessary, this is purely a backend NodeJS library
