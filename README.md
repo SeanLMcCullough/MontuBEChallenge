@@ -31,7 +31,7 @@ yarn add @montu/maps-backend-challenge
 
 This library provides a central point of engagementy for 3rd party maps search APIs. Currently only TomTom is implemented.
 
-### TomTomGeoSearchEngine
+### `TomTomGeoSearchEngine`
 
 The TomTomGeoSearchEngine class allows you to interact with the TomTom Fuzzy Search API.
 
@@ -44,7 +44,7 @@ const config = {
 const geoSearch = new TomTomGeoSearchEngine(config)
 ```
 
-#### TomTomGeoSearchEngine.getAutoCompleteDetails (query: string, options?: TomTomGeoSearchOptions): Promise<GeoSearchResults>
+#### `TomTomGeoSearchEngine.getAutoCompleteDetails (query: string, options?: TomTomGeoSearchOptions): Promise<GeoSearchResults>`
 
 Returns a list of potential fuzzy matches based on the search query
 
