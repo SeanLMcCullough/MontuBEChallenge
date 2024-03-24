@@ -5,12 +5,10 @@
     "module": "commonjs",
     "outDir": "dist",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "sourceMap": true
   },
   "include": [
-    "test/**/*.ts"
-  ],
-  "files": [
     "src/**/*.ts"
   ]
 }

@@ -1,8 +1,14 @@
 import { config } from 'dotenv'
 import { describe } from '@jest/globals'
 import { TomTomGeoSearchEngine } from '../src'
+import { wait } from './test-util'
 
 config()
+
+// Wait between test runs to avoid hitting 429 rate limit from TomTom.
+beforeEach(async () => {
+  await wait(1000)
+})
 
 describe('TomTomGeoSearchEngine', () => {
   it('can be constructed with a config object', () => {
@@ -33,7 +39,6 @@ describe('getPlaceAutocomplete', () => {
 
   it('returns a promise', () => {
     const res = engine.getAutoCompleteDetails('Big Pineapple')
-    console.log(res)
     expect(res).toBeInstanceOf(Promise)
   })
 
@@ -88,5 +93,10 @@ describe('getPlaceAutocomplete', () => {
       "You've got to be very careful if you don't know where you are going, because you might not get there."
     )
     expect(res.results).toStrictEqual([])
+  })
+
+  it('handles a query with a limited result size', async () => {
+    const res = await engine.getAutoCompleteDetails('mcdonalds', { limit: 1 })
+    expect(res.results.length).toBe(1)
   })
 })

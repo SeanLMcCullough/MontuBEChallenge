@@ -10,6 +10,9 @@ import type {
   TomTomGeoSearchResult
 } from './types'
 
+/**
+ * TomTomGeoSearchEngine is a class that provides a wrapper around the TomTom API for fuzzy searching.
+ */
 export default class TomTomGeoSearchEngine implements GeoSearchEngine {
   private readonly _config: TomTomGeoSearchEngineConfiguration
   private readonly _api: AxiosInstance
