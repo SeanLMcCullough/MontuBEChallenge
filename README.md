@@ -40,7 +40,13 @@ The TomTomGeoSearchEngine class allows you to interact with the TomTom Fuzzy Sea
 import { TomTomGeoSearchEngine } from '@montu/maps-backend-challenge'
 
 const config = {
-   apiKey: process.env.TOMTOM_API_KEY
+   apiKey: process.env.TOMTOM_API_KEY,
+   // apiVersion: '2'
+   // axiosConfig: {} // Custom axios configuration, will be applied over defaults
+   // baseUrl: 'https://api.tomtom.com' // If using a proxy or testing harness, provide a custom URL to invoke
+   // defaults: { // Defaults to apply to all searches. See TomTomGeoSearchOptions for more information.
+   //    limit: 3
+   // }
 }
 const geoSearch = new TomTomGeoSearchEngine(config)
 ```
