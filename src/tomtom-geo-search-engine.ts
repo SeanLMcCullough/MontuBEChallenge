@@ -25,10 +25,13 @@ export default class TomTomGeoSearchEngine implements GeoSearchEngine {
       },
       config
     )
-    this._config.defaults = Object.assign({}, this._config.defaults, {
-      limit: 10,
-      countrySet: ['AU']
-    })
+    this._config.defaults = Object.assign(
+      {
+        limit: 10,
+        countrySet: ['AU']
+      },
+      this._config.defaults
+    )
     this._api = this._configureApi()
   }
 

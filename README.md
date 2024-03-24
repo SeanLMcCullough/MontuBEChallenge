@@ -14,6 +14,7 @@ I have also changed the return type to an object containing an array. This could
 - The search input should be validated and sanitised. For this implementation we assume that axios suitably sanitises and encodes the URL
 - Replace axios with a fetch equivalent
 - Evaluate necessity of babel in a Node.JS library 
+- More testing around config options
 
 ## Install:
 
