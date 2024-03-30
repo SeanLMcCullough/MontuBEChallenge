@@ -11,7 +11,7 @@ I have also changed the return type to an object containing an array. This could
 
 - Mock the API for unit tests, separate out integration tests to ensure reliability and repeatability of tests
 - Replace snapshot tests with targeted tests (if API is mocked, sorry if these tests break between now and Monday...)
-- The search input should be validated and sanitised. For this implementation we assume that axios suitably sanitises and encodes the URL
+- ~~The search input should be validated and sanitised. For this implementation we assume that axios suitably sanitises and encodes the URL~~
 - Replace axios with a fetch equivalent
 - Evaluate necessity of babel in a Node.JS library 
 - More testing around config options

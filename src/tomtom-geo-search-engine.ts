@@ -56,7 +56,8 @@ export default class TomTomGeoSearchEngine implements GeoSearchEngine {
    * @returns
    */
   async getAutoCompleteDetails (query: string, options?: TomTomGeoSearchOptions): Promise<GeoSearchResults> {
-    const path = `/search/${this._config.apiVersion ?? '2'}/search/${query}.json`
+    const encodedQuery = encodeURIComponent(query)
+    const path = `/search/${this._config.apiVersion ?? '2'}/search/${encodedQuery}.json`
     const opts = {
       params: {
         ...this._config.defaults,
