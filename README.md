@@ -30,7 +30,7 @@ yarn add @montu/maps-backend-challenge
 
 ## Usage
 
-This library provides a central point of engagementy for 3rd party maps search APIs. Currently only TomTom is implemented.
+This library provides a central point of engagement for 3rd party maps search APIs. Currently only TomTom is implemented.
 
 ### `TomTomGeoSearchEngine`
 
